@@ -1,0 +1,134 @@
+2018-03-23 18:03:40,618 - INFO - Beginning execution of dms_barcodedsubamplicons in directory /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/replicate-1/DMSO39
+
+2018-03-23 18:03:40,618 - INFO - Progress will be logged to DMSO39_.log
+2018-03-23 18:03:41,075 - INFO - Version information for dms_tools and associated packages.
+	Time and date: Fri Mar 23 18:03:40 2018
+	Platform: Darwin-15.6.0-x86_64-i386-64bit
+	Python version: 2.7.13 |Anaconda 4.4.0 (x86_64)| (default, Dec 20 2016, 23:05:08)  [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)]
+	dms_tools version: 1.2.2
+	Bio version: 1.70
+	numpy version: 1.12.1
+	scipy version: 0.19.0
+	matplotlib version: 2.0.2
+	cython version: 0.25.2
+	pystan version: 2.16.0.0
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+	pandas version: 0.20.1
+
+2018-03-23 18:03:41,075 - INFO - Parsed the following arguments:
+	minreadconcurrence = 0.75
+	maxmuts = 4
+	maxlowqfrac = 0.075
+	r1files = ['/Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-1/DMSO39/DMSO39_1.fastq']
+	minreadidentity = 0.9
+	purgefrac = 0
+	R1trimlength = 200
+	R1_is_antisense = False
+	r2files = ['/Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-1/DMSO39/DMSO39_2.fastq']
+	alignspecs = [(1, 252, 34, 32), (253, 501, 38, 30), (502, 750, 30, 36), (751, 1002, 32, 41), (1003, 1251, 29, 34), (1252, 1497, 34, 41)]
+	R2trimlength = 160
+	maxreadtrim = 3
+	barcodeinfo = False
+	chartype = codon
+	barcodelength = 8
+	minreadsperbarcode = 2
+	minq = 15
+	outprefix = DMSO39_
+	refseq = /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/Aichi_NP_reference.fasta
+	purgereadfrac = 0
+	seed = 1
+
+2018-03-23 18:03:41,079 - INFO - Read a reference sequence of 499 codons from /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/Aichi_NP_reference.fasta
+
+2018-03-23 18:03:41,080 - INFO - Now parsing reads from the following:
+	r1files: /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-1/DMSO39/DMSO39_1.fastq
+	r2files: /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-1/DMSO39/DMSO39_2.fastq
+2018-03-23 18:03:42,734 - INFO - Reads parsed so far: 100000
+2018-03-23 18:03:44,358 - INFO - Reads parsed so far: 200000
+2018-03-23 18:03:45,994 - INFO - Reads parsed so far: 300000
+2018-03-23 18:03:47,652 - INFO - Reads parsed so far: 400000
+2018-03-23 18:03:49,352 - INFO - Reads parsed so far: 500000
+2018-03-23 18:03:51,061 - INFO - Reads parsed so far: 600000
+2018-03-23 18:03:52,644 - INFO - Reads parsed so far: 700000
+2018-03-23 18:03:54,398 - INFO - Reads parsed so far: 800000
+2018-03-23 18:03:55,981 - INFO - Reads parsed so far: 900000
+2018-03-23 18:03:57,604 - INFO - Reads parsed so far: 1000000
+2018-03-23 18:03:59,195 - INFO - Reads parsed so far: 1100000
+2018-03-23 18:04:01,024 - INFO - Reads parsed so far: 1200000
+2018-03-23 18:04:02,616 - INFO - Reads parsed so far: 1300000
+2018-03-23 18:04:04,203 - INFO - Reads parsed so far: 1400000
+2018-03-23 18:04:05,787 - INFO - Reads parsed so far: 1500000
+2018-03-23 18:04:07,706 - INFO - Reads parsed so far: 1600000
+2018-03-23 18:04:09,302 - INFO - Reads parsed so far: 1700000
+2018-03-23 18:04:10,907 - INFO - Reads parsed so far: 1800000
+2018-03-23 18:04:12,506 - INFO - Reads parsed so far: 1900000
+2018-03-23 18:04:14,097 - INFO - Reads parsed so far: 2000000
+2018-03-23 18:04:15,690 - INFO - Reads parsed so far: 2100000
+2018-03-23 18:04:17,273 - INFO - Reads parsed so far: 2200000
+2018-03-23 18:04:18,848 - INFO - Reads parsed so far: 2300000
+2018-03-23 18:04:20,897 - INFO - Reads parsed so far: 2400000
+2018-03-23 18:04:22,471 - INFO - Reads parsed so far: 2500000
+2018-03-23 18:04:24,049 - INFO - Reads parsed so far: 2600000
+2018-03-23 18:04:25,627 - INFO - Reads parsed so far: 2700000
+2018-03-23 18:04:27,202 - INFO - Reads parsed so far: 2800000
+2018-03-23 18:04:28,783 - INFO - Reads parsed so far: 2900000
+2018-03-23 18:04:30,362 - INFO - Reads parsed so far: 3000000
+2018-03-23 18:04:31,131 - INFO - Finished parsing all 3043729 reads; ended up with 1399176 unique barcodes.
+
+2018-03-23 18:04:31,136 - INFO - Now examining the 1399176 barcodes to see if reads meet criteria for retention
+2018-03-23 18:04:34,356 - INFO - Barcodes examined so far: 100000
+2018-03-23 18:04:37,498 - INFO - Barcodes examined so far: 200000
+2018-03-23 18:04:40,622 - INFO - Barcodes examined so far: 300000
+2018-03-23 18:04:43,710 - INFO - Barcodes examined so far: 400000
+2018-03-23 18:04:46,778 - INFO - Barcodes examined so far: 500000
+2018-03-23 18:04:49,810 - INFO - Barcodes examined so far: 600000
+2018-03-23 18:04:52,794 - INFO - Barcodes examined so far: 700000
+2018-03-23 18:04:56,006 - INFO - Barcodes examined so far: 800000
+2018-03-23 18:04:59,164 - INFO - Barcodes examined so far: 900000
+2018-03-23 18:05:02,284 - INFO - Barcodes examined so far: 1000000
+2018-03-23 18:05:05,401 - INFO - Barcodes examined so far: 1100000
+2018-03-23 18:05:08,591 - INFO - Barcodes examined so far: 1200000
+2018-03-23 18:05:11,938 - INFO - Barcodes examined so far: 1300000
+2018-03-23 18:05:16,146 - INFO - Finished examining all 1399176 barcodes
+
+2018-03-23 18:05:16,146 - INFO - Writing the codon counts to DMSO39_counts.txt
+2018-03-23 18:05:16,170 - INFO - Here are the summary statistics (these are also being written to DMSO39_summarystats.txt):
+	total read pairs = 3043729
+	read pairs that fail Illumina filter = 0
+	low quality read pairs = 200163
+	barcodes randomly purged = 0
+	discarded barcodes with 1 reads = 650604
+	aligned barcodes with 2 reads = 307730
+	discarded barcodes with 2 reads = 5386
+	un-alignable barcodes with 2 reads = 30814
+	aligned barcodes with 3 reads = 188175
+	discarded barcodes with 3 reads = 5392
+	un-alignable barcodes with 3 reads = 27535
+	aligned barcodes with 4 reads = 102187
+	discarded barcodes with 4 reads = 3756
+	un-alignable barcodes with 4 reads = 5360
+	aligned barcodes with 5 reads = 43171
+	discarded barcodes with 5 reads = 2092
+	un-alignable barcodes with 5 reads = 2210
+	aligned barcodes with 6 reads = 15417
+	discarded barcodes with 6 reads = 954
+	un-alignable barcodes with 6 reads = 752
+	aligned barcodes with 7 reads = 4824
+	discarded barcodes with 7 reads = 380
+	un-alignable barcodes with 7 reads = 249
+	aligned barcodes with 8 reads = 1361
+	discarded barcodes with 8 reads = 159
+	un-alignable barcodes with 8 reads = 59
+	aligned barcodes with 9 reads = 390
+	discarded barcodes with 9 reads = 53
+	un-alignable barcodes with 9 reads = 13
+	aligned barcodes with 10 reads = 89
+	discarded barcodes with 10 reads = 24
+	un-alignable barcodes with 10 reads = 5
+	aligned barcodes with 11 reads = 26
+	discarded barcodes with 11 reads = 1
+	aligned barcodes with 12 reads = 6
+	discarded barcodes with 12 reads = 1
+	aligned barcodes with 13 reads = 1
+2018-03-23 18:05:16,170 - INFO - Successful completion of dms_barcodedsubamplicons at Fri Mar 23 18:05:16 2018

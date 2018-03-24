@@ -1,0 +1,207 @@
+2018-03-23 19:18:41,078 - INFO - Beginning execution of dms_barcodedsubamplicons in directory /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/replicate-3/Hsp90i37
+
+2018-03-23 19:18:41,078 - INFO - Progress will be logged to Hsp90i37_.log
+2018-03-23 19:18:41,656 - INFO - Version information for dms_tools and associated packages.
+	Time and date: Fri Mar 23 19:18:41 2018
+	Platform: Darwin-15.6.0-x86_64-i386-64bit
+	Python version: 2.7.13 |Anaconda 4.4.0 (x86_64)| (default, Dec 20 2016, 23:05:08)  [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)]
+	dms_tools version: 1.2.2
+	Bio version: 1.70
+	numpy version: 1.12.1
+	scipy version: 0.19.0
+	matplotlib version: 2.0.2
+	cython version: 0.25.2
+	pystan version: 2.16.0.0
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+	pandas version: 0.20.1
+
+2018-03-23 19:18:41,656 - INFO - Parsed the following arguments:
+	minreadconcurrence = 0.75
+	maxmuts = 4
+	maxlowqfrac = 0.075
+	r1files = ['/Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-3/Hsp90i37/Hsp90i37_1.fastq']
+	minreadidentity = 0.9
+	purgefrac = 0
+	R1trimlength = 200
+	R1_is_antisense = False
+	r2files = ['/Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-3/Hsp90i37/Hsp90i37_2.fastq']
+	alignspecs = [(1, 252, 34, 32), (253, 501, 38, 30), (502, 750, 30, 36), (751, 1002, 32, 41), (1003, 1251, 29, 34), (1252, 1497, 34, 41)]
+	R2trimlength = 160
+	maxreadtrim = 3
+	barcodeinfo = False
+	chartype = codon
+	barcodelength = 8
+	minreadsperbarcode = 2
+	minq = 15
+	outprefix = Hsp90i37_
+	refseq = /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/Aichi_NP_reference.fasta
+	purgereadfrac = 0
+	seed = 1
+
+2018-03-23 19:18:41,667 - INFO - Read a reference sequence of 499 codons from /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/Aichi_NP_reference.fasta
+
+2018-03-23 19:18:41,667 - INFO - Now parsing reads from the following:
+	r1files: /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-3/Hsp90i37/Hsp90i37_1.fastq
+	r2files: /Users/annapon/Documents/NP_DMS_2018/2018_NP_DMS/FASTQ_files//replicate-3/Hsp90i37/Hsp90i37_2.fastq
+2018-03-23 19:18:43,321 - INFO - Reads parsed so far: 100000
+2018-03-23 19:18:44,956 - INFO - Reads parsed so far: 200000
+2018-03-23 19:18:46,670 - INFO - Reads parsed so far: 300000
+2018-03-23 19:18:48,258 - INFO - Reads parsed so far: 400000
+2018-03-23 19:18:49,955 - INFO - Reads parsed so far: 500000
+2018-03-23 19:18:51,662 - INFO - Reads parsed so far: 600000
+2018-03-23 19:18:53,244 - INFO - Reads parsed so far: 700000
+2018-03-23 19:18:55,005 - INFO - Reads parsed so far: 800000
+2018-03-23 19:18:56,588 - INFO - Reads parsed so far: 900000
+2018-03-23 19:18:58,221 - INFO - Reads parsed so far: 1000000
+2018-03-23 19:19:00,037 - INFO - Reads parsed so far: 1100000
+2018-03-23 19:19:01,632 - INFO - Reads parsed so far: 1200000
+2018-03-23 19:19:03,228 - INFO - Reads parsed so far: 1300000
+2018-03-23 19:19:04,818 - INFO - Reads parsed so far: 1400000
+2018-03-23 19:19:06,715 - INFO - Reads parsed so far: 1500000
+2018-03-23 19:19:08,312 - INFO - Reads parsed so far: 1600000
+2018-03-23 19:19:09,901 - INFO - Reads parsed so far: 1700000
+2018-03-23 19:19:11,498 - INFO - Reads parsed so far: 1800000
+2018-03-23 19:19:13,101 - INFO - Reads parsed so far: 1900000
+2018-03-23 19:19:14,698 - INFO - Reads parsed so far: 2000000
+2018-03-23 19:19:16,290 - INFO - Reads parsed so far: 2100000
+2018-03-23 19:19:18,317 - INFO - Reads parsed so far: 2200000
+2018-03-23 19:19:19,913 - INFO - Reads parsed so far: 2300000
+2018-03-23 19:19:21,513 - INFO - Reads parsed so far: 2400000
+2018-03-23 19:19:23,102 - INFO - Reads parsed so far: 2500000
+2018-03-23 19:19:24,694 - INFO - Reads parsed so far: 2600000
+2018-03-23 19:19:26,366 - INFO - Reads parsed so far: 2700000
+2018-03-23 19:19:27,956 - INFO - Reads parsed so far: 2800000
+2018-03-23 19:19:29,547 - INFO - Reads parsed so far: 2900000
+2018-03-23 19:19:31,132 - INFO - Reads parsed so far: 3000000
+2018-03-23 19:19:32,714 - INFO - Reads parsed so far: 3100000
+2018-03-23 19:19:34,301 - INFO - Reads parsed so far: 3200000
+2018-03-23 19:19:36,554 - INFO - Reads parsed so far: 3300000
+2018-03-23 19:19:38,135 - INFO - Reads parsed so far: 3400000
+2018-03-23 19:19:39,725 - INFO - Reads parsed so far: 3500000
+2018-03-23 19:19:41,314 - INFO - Reads parsed so far: 3600000
+2018-03-23 19:19:42,903 - INFO - Reads parsed so far: 3700000
+2018-03-23 19:19:44,495 - INFO - Reads parsed so far: 3800000
+2018-03-23 19:19:46,082 - INFO - Reads parsed so far: 3900000
+2018-03-23 19:19:47,669 - INFO - Reads parsed so far: 4000000
+2018-03-23 19:19:49,257 - INFO - Reads parsed so far: 4100000
+2018-03-23 19:19:50,847 - INFO - Reads parsed so far: 4200000
+2018-03-23 19:19:52,437 - INFO - Reads parsed so far: 4300000
+2018-03-23 19:19:54,030 - INFO - Reads parsed so far: 4400000
+2018-03-23 19:19:55,621 - INFO - Reads parsed so far: 4500000
+2018-03-23 19:19:57,212 - INFO - Reads parsed so far: 4600000
+2018-03-23 19:19:58,796 - INFO - Reads parsed so far: 4700000
+2018-03-23 19:20:00,385 - INFO - Reads parsed so far: 4800000
+2018-03-23 19:20:01,972 - INFO - Reads parsed so far: 4900000
+2018-03-23 19:20:03,552 - INFO - Reads parsed so far: 5000000
+2018-03-23 19:20:05,135 - INFO - Reads parsed so far: 5100000
+2018-03-23 19:20:06,723 - INFO - Reads parsed so far: 5200000
+2018-03-23 19:20:08,330 - INFO - Reads parsed so far: 5300000
+2018-03-23 19:20:09,920 - INFO - Reads parsed so far: 5400000
+2018-03-23 19:20:11,505 - INFO - Reads parsed so far: 5500000
+2018-03-23 19:20:13,094 - INFO - Reads parsed so far: 5600000
+2018-03-23 19:20:14,681 - INFO - Reads parsed so far: 5700000
+2018-03-23 19:20:16,268 - INFO - Reads parsed so far: 5800000
+2018-03-23 19:20:18,946 - INFO - Reads parsed so far: 5900000
+2018-03-23 19:20:20,537 - INFO - Reads parsed so far: 6000000
+2018-03-23 19:20:22,126 - INFO - Reads parsed so far: 6100000
+2018-03-23 19:20:23,716 - INFO - Reads parsed so far: 6200000
+2018-03-23 19:20:25,302 - INFO - Reads parsed so far: 6300000
+2018-03-23 19:20:26,891 - INFO - Reads parsed so far: 6400000
+2018-03-23 19:20:28,476 - INFO - Reads parsed so far: 6500000
+2018-03-23 19:20:30,060 - INFO - Reads parsed so far: 6600000
+2018-03-23 19:20:31,643 - INFO - Reads parsed so far: 6700000
+2018-03-23 19:20:31,881 - INFO - Finished parsing all 6715181 reads; ended up with 2100128 unique barcodes.
+
+2018-03-23 19:20:31,886 - INFO - Now examining the 2100128 barcodes to see if reads meet criteria for retention
+2018-03-23 19:20:35,839 - INFO - Barcodes examined so far: 100000
+2018-03-23 19:20:39,694 - INFO - Barcodes examined so far: 200000
+2018-03-23 19:20:43,546 - INFO - Barcodes examined so far: 300000
+2018-03-23 19:20:47,393 - INFO - Barcodes examined so far: 400000
+2018-03-23 19:20:51,297 - INFO - Barcodes examined so far: 500000
+2018-03-23 19:20:55,172 - INFO - Barcodes examined so far: 600000
+2018-03-23 19:20:59,028 - INFO - Barcodes examined so far: 700000
+2018-03-23 19:21:02,883 - INFO - Barcodes examined so far: 800000
+2018-03-23 19:21:06,743 - INFO - Barcodes examined so far: 900000
+2018-03-23 19:21:10,605 - INFO - Barcodes examined so far: 1000000
+2018-03-23 19:21:14,459 - INFO - Barcodes examined so far: 1100000
+2018-03-23 19:21:18,334 - INFO - Barcodes examined so far: 1200000
+2018-03-23 19:21:22,195 - INFO - Barcodes examined so far: 1300000
+2018-03-23 19:21:26,061 - INFO - Barcodes examined so far: 1400000
+2018-03-23 19:21:29,924 - INFO - Barcodes examined so far: 1500000
+2018-03-23 19:21:33,814 - INFO - Barcodes examined so far: 1600000
+2018-03-23 19:21:37,840 - INFO - Barcodes examined so far: 1700000
+2018-03-23 19:21:42,180 - INFO - Barcodes examined so far: 1800000
+2018-03-23 19:21:46,889 - INFO - Barcodes examined so far: 1900000
+2018-03-23 19:21:52,182 - INFO - Barcodes examined so far: 2000000
+2018-03-23 19:22:00,065 - INFO - Barcodes examined so far: 2100000
+2018-03-23 19:22:00,656 - INFO - Finished examining all 2100128 barcodes
+
+2018-03-23 19:22:00,657 - INFO - Writing the codon counts to Hsp90i37_counts.txt
+2018-03-23 19:22:00,681 - INFO - Here are the summary statistics (these are also being written to Hsp90i37_summarystats.txt):
+	total read pairs = 6715181
+	read pairs that fail Illumina filter = 0
+	low quality read pairs = 345542
+	barcodes randomly purged = 0
+	discarded barcodes with 1 reads = 717119
+	aligned barcodes with 2 reads = 334653
+	discarded barcodes with 2 reads = 2373
+	un-alignable barcodes with 2 reads = 29708
+	aligned barcodes with 3 reads = 281411
+	discarded barcodes with 3 reads = 2333
+	un-alignable barcodes with 3 reads = 23779
+	aligned barcodes with 4 reads = 224396
+	discarded barcodes with 4 reads = 2478
+	un-alignable barcodes with 4 reads = 13222
+	aligned barcodes with 5 reads = 161294
+	discarded barcodes with 5 reads = 2204
+	un-alignable barcodes with 5 reads = 9479
+	aligned barcodes with 6 reads = 109126
+	discarded barcodes with 6 reads = 1851
+	un-alignable barcodes with 6 reads = 6586
+	aligned barcodes with 7 reads = 69659
+	discarded barcodes with 7 reads = 1369
+	un-alignable barcodes with 7 reads = 4265
+	aligned barcodes with 8 reads = 42384
+	discarded barcodes with 8 reads = 956
+	un-alignable barcodes with 8 reads = 2589
+	aligned barcodes with 9 reads = 24576
+	discarded barcodes with 9 reads = 642
+	un-alignable barcodes with 9 reads = 1612
+	aligned barcodes with 10 reads = 13475
+	discarded barcodes with 10 reads = 385
+	un-alignable barcodes with 10 reads = 879
+	aligned barcodes with 11 reads = 7191
+	discarded barcodes with 11 reads = 262
+	un-alignable barcodes with 11 reads = 479
+	aligned barcodes with 12 reads = 3456
+	discarded barcodes with 12 reads = 140
+	un-alignable barcodes with 12 reads = 245
+	aligned barcodes with 13 reads = 1705
+	discarded barcodes with 13 reads = 89
+	un-alignable barcodes with 13 reads = 110
+	aligned barcodes with 14 reads = 798
+	discarded barcodes with 14 reads = 36
+	un-alignable barcodes with 14 reads = 62
+	aligned barcodes with 15 reads = 370
+	discarded barcodes with 15 reads = 20
+	un-alignable barcodes with 15 reads = 34
+	aligned barcodes with 16 reads = 162
+	discarded barcodes with 16 reads = 11
+	un-alignable barcodes with 16 reads = 18
+	aligned barcodes with 17 reads = 73
+	discarded barcodes with 17 reads = 6
+	un-alignable barcodes with 17 reads = 2
+	aligned barcodes with 18 reads = 26
+	discarded barcodes with 18 reads = 3
+	un-alignable barcodes with 18 reads = 2
+	aligned barcodes with 19 reads = 11
+	discarded barcodes with 19 reads = 1
+	aligned barcodes with 20 reads = 6
+	un-alignable barcodes with 20 reads = 1
+	aligned barcodes with 21 reads = 1
+	discarded barcodes with 21 reads = 1
+	aligned barcodes with 22 reads = 1
+	aligned barcodes with 23 reads = 2
+	aligned barcodes with 24 reads = 1
+2018-03-23 19:22:00,682 - INFO - Successful completion of dms_barcodedsubamplicons at Fri Mar 23 19:22:00 2018
