@@ -3,3 +3,5 @@ FASTQ_files/
 *.pyc
 *.gz
 *.fast
+.*
+!.gitignore
